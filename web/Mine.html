@@ -1,0 +1,226 @@
+<html>
+<head>
+<!-- Latest compiled and minified CSS-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<style type="text/css">
+
+body{
+margin:0;
+padding:0;
+line-height: 1.5em;
+}
+
+
+
+#contentwrapper{
+float: left;
+width: 100%;
+height:34px;
+}
+
+#contentcolumn{
+margin-left: 200px; /*Set left margin to LeftColumnWidth*/
+}
+
+#leftcolumn{
+float: left;
+width: 200px; /*Width of left column*/
+margin-left: -100%;
+background: #C8FC98;
+}
+
+
+
+
+.innertube{
+margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+margin-top: 0;
+}
+
+
+
+	#tfnewsearch{
+		float:right;
+		padding:15px;
+	}
+	.tftextinput{
+		margin: 0;
+		padding: 5px 20px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton {
+		margin: 0;
+		padding: 5px 5px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton::-moz-focus-inner {
+	  border: 0;
+	}
+	
+
+#apDiv1 {
+	position:absolute;
+	left:240px;
+	top:-7px;
+	width:502px;
+	height:74px;
+	z-index:1;
+}
+#apDiv2 {
+	position:absolute;
+	left:0px;
+	top:95px;
+	width:1271px;
+	height:448px;
+	z-index:2;
+}
+#apDiv3 {
+	position:absolute;
+	left:217px;
+	top:116px;
+	width:270px;
+	height:90px;
+	z-index:3;
+}
+#apDiv4 {
+	position:absolute;
+	left:874px;
+	top:11px;
+	width:409px;
+	height:59px;
+	z-index:4;
+}
+#apDiv5 {
+	position:absolute;
+	left:237px;
+	top:130px;
+	width:259px;
+	height:324px;
+	z-index:2;
+}
+
+
+#apDiv6 {
+	position:absolute;
+	left:30px;
+	top:0px;
+	width:117px;
+	height:65px;
+	z-index:2;
+}
+#apDiv7 {
+	position:absolute;
+	left:938px;
+	top:4px;
+	width:205px;
+	height:46px;
+	z-index:3;
+}
+#apDiv8 {
+	position:absolute;
+	left:183px;
+	top:47px;
+	width:861px;
+	height:380px;
+	z-index:4;
+}
+#link
+{
+color:#555;
+}
+</style>
+</head>
+<body style="background-image:url(background.png)">
+
+<div id="apDiv1">
+  <div><form id="tfnewsearch" method="get" action="http://www.google.com">
+<input type="text" class="tftextinput" name="q" size="30" maxlength="120" placeholder="Search"><input type="submit" value="search" class="tfbutton">
+		</form> 
+     
+  </div>
+</div>
+<div id="apDiv6">
+  <div style="width:117px;height:64px;background:url(log.png) repeat-x top;">
+  <a href="index.html">
+      <canvas style="width:117px;height:63px; left top; float:left;"></canvas></a>
+  </div>
+</div>
+<div id="apDiv7">
+<div>
+              <button class="btn btn-default btn-sm dropdown-toggle"  type="button" data-toggle="dropdown" align="right" style="background-image:url(header_bg.png);"><font color=#ffffff>
+    Cart | Rs.300/- </font><span class="caret" style="color: #ffffff;"></span>
+  </button>
+  <ul class="dropdown-menu">
+    ...
+  </ul>
+  
+  <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" align="right" style="background-image:url(header_bg.png);"><font color=#ffffff>
+    Login </font><span class="caret"style="color: #ffffff;"></span>
+  </button>
+  <ul class="dropdown-menu" style="list-style-type: none;">
+    <li><a>Logout</a></li>
+    <li><a>Profile</a></li>
+  </ul>
+  </div>
+</div>
+<div>
+  <div id="header" style="background:url(header_bg.png) repeat-x top; height:43px; width:100%;"></div>
+</div>
+<!--main contents-->
+
+<div style="width:13em;height:25em;background:url(lebackk.png) repeat-x top;" >
+  <ul style="margin:0;width:13em;height:25em;list-style-type: none;padding:25px;">
+  <font size="3"><b>
+    <li style="left:0px; padding:3px;"><a href="" id="link" >Grocery</a></li>
+    <li style="padding:4px;"><a href="" id="link">Ready to Cook</a></li>
+    <li style="padding:4px;"><a href="" id="link">Beauty & Health</a></li>
+    <li style="padding:4px;"><a href="" id="link">Go Green</a></li>
+    <li style="padding:4px;"><a href="" id="link">Gifts</a></li>
+    <li style="padding:4px;"><a href="" id="link">School Items</a></li>
+    <li style="padding:4px;"><a href="" id="link">Entertainment</a></li>
+    <li style="padding:4px;"><a href="" id="link">Footwears</a></li>
+    <li style="padding:4px;"><a href="" id="link">ReadymadeKits</a></li></b>
+    </font>
+  </ul>
+</div>
+
+
+
+<!--close main contents-->
+
+  
+<div id="leftcolumn">
+  <div class="innertube"><b>Left Column: <em>200px</em></b> <script type="text/javascript">filltext(15)</script></div>
+  
+</div>
+		
+	<div id="footer">
+	  <div id="footer2"> </div>
+	</div>
+</body>
+</html>
